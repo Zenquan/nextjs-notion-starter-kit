@@ -51,12 +51,12 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: 'About',
-      pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
+      title: '文章',
+      pageId: '320a75be452f4d49ab167064b1391f59'
     },
     {
-      title: 'Contact',
-      pageId: 'ce047af33578493db77a68c4ac89c342'
-    }
+      title: '关于',
+      pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
+    },
   ]
 })
