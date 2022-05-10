@@ -14,7 +14,8 @@ export default siteConfig({
   author: 'Zenquan',
 
   // open graph metadata (optional)
-  description: 'Zenquan的博客———前端折腾工程师，喜欢写代码、摄影，旅游，音乐、美食。',
+  description:
+    'Zenquan的博客———前端折腾工程师，喜欢写代码、摄影，旅游，音乐、美食。',
 
   // social usernames (optional)
   twitter: '',
@@ -55,8 +56,12 @@ export default siteConfig({
       pageId: '320a75be452f4d49ab167064b1391f59'
     },
     {
+      title: '摄影',
+      pageId: 'd5e262fc4ca4454c86c4782019322ea1'
+    },
+    {
       title: '关于',
       pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
-    },
+    }
   ]
 })
