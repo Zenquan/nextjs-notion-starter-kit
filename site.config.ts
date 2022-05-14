@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '256c24be22f74927b0649cd4d9e17a63',
+  rootNotionPageId: process.env.rootNotionPageId,
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -40,10 +40,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-    '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-    '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  },
+//   pageUrlOverrides: {
+//     '/foo': '067dd719a912471ea9a3ac10710e7fdf',
+//     '/bar': '0be6efce9daf42688f65c76b89f8eb27'
+//   },
   // pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
@@ -53,15 +53,15 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '文章',
-      pageId: '320a75be452f4d49ab167064b1391f59'
+      pageId: process.env.article 
     },
     {
       title: '摄影',
-      pageId: 'd5e262fc4ca4454c86c4782019322ea1'
+      pageId: process.env.photography 
     },
     {
       title: '关于',
-      pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
+      pageId: process.env.about
     }
   ]
 })
