@@ -248,6 +248,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     config.description
 
   const Comments = () =>
+    isBlogPost &&
     config.cusdis && (
       <ReactCusdis
         style={{
