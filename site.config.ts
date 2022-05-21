@@ -65,6 +65,7 @@ export default siteConfig({
     }
   ],
   cusdis: {
-    appId: '0baf2ea0-1342-4c45-aa29-f918f0d12f44' // your website id
+    host: 'https://cusdis.joyenjoy.tech',
+    appId: 'f7dff4a8-f432-4130-a219-608d7ed06a6b' // your website id
   }
 })
