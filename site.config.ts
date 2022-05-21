@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: process.env.rootNotionPageId,
+  rootNotionPageId: '256c24be22f74927b0649cd4d9e17a63',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -53,15 +53,18 @@ export default siteConfig({
   navigationLinks: [
     {
       title: '文章',
-      pageId: process.env.article 
+      pageId: '320a75be452f4d49ab167064b1391f59'
     },
     {
       title: '摄影',
-      pageId: process.env.photography 
+      pageId: 'd5e262fc4ca4454c86c4782019322ea1'
     },
     {
       title: '关于',
-      pageId: process.env.about
+      pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
     }
-  ]
+  ],
+  cusdis: {
+    appId: '0baf2ea0-1342-4c45-aa29-f918f0d12f44' // your website id
+  },
 })
