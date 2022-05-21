@@ -79,6 +79,12 @@ export const PageHead: React.FC<
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
+      <script
+        async
+        defer
+        data-website-id='6ca248ff-448b-4ef0-af16-bdad2d23bd06'
+        src='https://umami.joyenjoy.tech/umami.js'
+      ></script>
     </Head>
   )
 }
