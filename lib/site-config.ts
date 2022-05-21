@@ -30,6 +30,8 @@ export interface SiteConfig {
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
+
+  cusdis?: Cusdis
 }
 
 export interface NavigationLink {
@@ -40,4 +42,10 @@ export interface NavigationLink {
 
 export const siteConfig = (config: SiteConfig): SiteConfig => {
   return config
+}
+
+export interface Cusdis {
+  lang?: string
+  host?: string
+  appId: string
 }

@@ -30,7 +30,7 @@ import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
 import { GitHubShareButton } from './GitHubShareButton'
-
+import { ReactCusdis } from 'react-cusdis'
 import styles from './styles.module.css'
 
 // -----------------------------------------------------------------------------
@@ -247,6 +247,24 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
+  const Comments = () =>
+    config.cusdis && (
+      <ReactCusdis
+        style={{
+          width: '100%'
+        }}
+        lang={config.cusdis.lang}
+        attrs={{
+          ...config.cusdis,
+          host: config.cusdis.host || 'https://cusdis.com',
+          appId: config.cusdis.appId,
+          pageId: pageId,
+          pageTitle: title,
+          pageUrl: typeof location !== 'undefined' ? location.href : undefined
+        }}
+      ></ReactCusdis>
+    )
+
   return (
     <>
       <PageHead
@@ -283,6 +301,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
+        pageFooter={<Comments />}
         footer={footer}
       />
 

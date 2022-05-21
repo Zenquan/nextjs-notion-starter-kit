@@ -8,7 +8,7 @@
 import { parsePageId } from 'notion-utils'
 import posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
-import { NavigationLink } from './site-config'
+import { NavigationLink, Cusdis } from './site-config'
 import {
   PageUrlOverridesInverseMap,
   PageUrlOverridesMap,
@@ -201,3 +201,5 @@ function invertPageUrlOverrides(
     }
   }, {})
 }
+
+export const cusdis: Cusdis = getSiteConfig('cusdis', null)
