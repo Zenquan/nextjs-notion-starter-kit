@@ -44,6 +44,25 @@ const socialLinks: SocialLink[] = [
         <path d='M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z' />
       </svg>
     )
+  },
+
+  {
+    name: 'rss',
+    href: `/feed`,
+    title: `rss ${config.author}`,
+    icon: (
+      <svg
+        stroke='currentColor'
+        fill='currentColor'
+        strokeWidth='0'
+        viewBox='0 0 16 16'
+        height='1em'
+        width='1em'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'></path>
+      </svg>
+    )
   }
 ].filter(Boolean)
 

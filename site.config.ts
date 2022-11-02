@@ -51,10 +51,10 @@ export default siteConfig({
   // navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: '文章',
-      pageId: '320a75be452f4d49ab167064b1391f59'
-    },
+    // {
+    //   title: '文章',
+    //   pageId: '320a75be452f4d49ab167064b1391f59'
+    // },
     {
       title: '摄影',
       pageId: 'd5e262fc4ca4454c86c4782019322ea1'
