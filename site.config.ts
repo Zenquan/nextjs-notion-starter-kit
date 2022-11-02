@@ -57,11 +57,11 @@ export default siteConfig({
     // },
     {
       title: '摄影',
-      pageId: 'd5e262fc4ca4454c86c4782019322ea1'
+      pageId: '02b08b289e424893a0eff50c5ac54eed'
     },
     {
       title: '关于',
-      pageId: '88a75d5fd4544bdda2f0fa20fda1f284'
+      pageId: '03e0bfe0040842e9a187c30f5894655d'
     }
   ],
   cusdis: {
