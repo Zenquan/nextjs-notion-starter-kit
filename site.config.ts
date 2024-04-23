@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Zenquan的博客',
-  domain: 'https://blog.zenquan.vercel.app/',
+  domain: 'https://fe.u-tools.fun',
   author: 'Zenquan',
 
   // open graph metadata (optional)
