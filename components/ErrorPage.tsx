@@ -8,7 +8,7 @@ export const ErrorPage: React.FC<{ statusCode: number }> = ({ statusCode }) => {
 
   return (
     <>
-      <PageHead title={title} />
+      <PageHead title={title} description='Zenquan的博客的错误页面，点击刷新或者返回首页'/>
 
       <div className={styles.container}>
         <main className={styles.main}>

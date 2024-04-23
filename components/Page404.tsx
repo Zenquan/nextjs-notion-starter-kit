@@ -10,7 +10,7 @@ export const Page404: React.FC<types.PageProps> = ({ site, pageId, error }) => {
 
   return (
     <>
-      <PageHead site={site} title={title} />
+      <PageHead site={site} title={title} description='Zenquan的博客的404页面，页面不存在哦~ 请回到首页，进入存在的页面'/>
 
       <div className={styles.container}>
         <main className={styles.main}>
