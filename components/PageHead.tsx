@@ -88,12 +88,23 @@ export const PageHead: React.FC<
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
-      <script
+      {/* <script
         async
         defer
         data-website-id='6ca248ff-448b-4ef0-af16-bdad2d23bd06'
         src='https://umami.joyenjoy.tech/umami.js'
-      ></script>
+      ></script> */}
+      {/* <!-- Cloudflare Web Analytics --> */}
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e7db8bc5355e47559da4522ac9fd10b4"}'></script>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTR0QLJ3FT"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NTR0QLJ3FT');
+      </script>
     </Head>
   )
 }
