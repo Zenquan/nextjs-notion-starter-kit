@@ -98,12 +98,16 @@ export const PageHead: React.FC<
       <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e7db8bc5355e47559da4522ac9fd10b4"}'></script>
       {/* <!-- Google tag (gtag.js) --> */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTR0QLJ3FT"></script>
-      <script>
+      <script dangerouslySetInnerHTML={{
+        __html: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        gtag('config', 'G-NTR0QLJ3FT');
+        gtag('config', 'G-NTR0QLJ3FT', {
+          page_path: window.location.pathname,
+        });
+      `,
+        }}>
       </script>
     </Head>
   )
